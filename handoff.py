@@ -50,8 +50,7 @@ class Car:
         if not self.active:
             return
 
-        if (self.x == 0 or self.x == 75 or self.x == 75 * 2 or self.x == 75 * 3) and (
-                self.y == 0 or self.y == 75 or self.y == 75 * 2 or self.y == 75 * 3):
+        if (self.x % 75 == 0) and (self.y % 75 == 0):
             self.turn()
         self.move()
 
@@ -323,6 +322,7 @@ def my_policy2(car):
 if __name__ == '__main__':
     setup()
     img = [[], [], [], [], []]
+
     m = [best_policy, threshold_policy, entropy_policy, my_policy, my_policy2]
     rec = []
     total = 0
@@ -356,7 +356,7 @@ if __name__ == '__main__':
             else:  # after first loop use the same as first generating list
                 for k in range(0, 12):
                     if not rec[i][k] is None:
-                        carlist.append(copy.copy(rec[i][k]))
+                        carlist.append(copy.deepcopy(rec[i][k]))
                         total += 1
             # step log
             if i % 5000 == 0:

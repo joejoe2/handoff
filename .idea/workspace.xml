@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="24e47638-dee0-4502-a8df-6ae18478154b" name="Default Changelist" comment="" />
+    <list default="true" id="24e47638-dee0-4502-a8df-6ae18478154b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/F74062010_project/F74062010_report.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/F74062010_project/F74062010_report.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/F74062010_project/src/bs1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/F74062010_project/src/bs2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/F74062010_project/src/bs3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/F74062010_project/src/bs4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/F74062010_project/src/handoff.py" beforeDir="false" afterPath="$PROJECT_DIR$/F74062010_project/src/handoff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/F74062010_project/src/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/F74062010_project/src/runtime.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/F74062010_report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/F74062010_report.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Figure_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Figure_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handoff.py" beforeDir="false" afterPath="$PROJECT_DIR$/handoff.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/handoff.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="364" column="45" selection-start-line="364" selection-start-column="45" selection-end-line="364" selection-end-column="45" />
+            <state relative-caret-position="7320">
+              <caret line="366" column="36" lean-forward="true" selection-start-line="366" selection-start-column="36" selection-end-line="366" selection-end-column="36" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -40,7 +55,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/handoff" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -51,9 +66,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-250" />
-    <option name="y" value="14" />
-    <option name="width" value="1873" />
+    <option name="x" value="-32" />
+    <option name="y" value="26" />
+    <option name="width" value="1865" />
     <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -77,6 +92,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -165,14 +181,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1488" height="803" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23966943" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23966943" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32886904" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32935917" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32935917" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39880952" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -207,15 +222,18 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/bs2.txt" />
-    <entry file="file://$PROJECT_DIR$/bs1.txt" />
     <entry file="file://$PROJECT_DIR$/t-116e-10pmin-120.png" />
     <entry file="file://$PROJECT_DIR$/bs3.txt" />
     <entry file="file://$PROJECT_DIR$/bs4.txt" />
     <entry file="file://$PROJECT_DIR$/test.py" />
+    <entry file="file://$PROJECT_DIR$/bs1.txt" />
+    <entry file="file://$PROJECT_DIR$/Figure_1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/handoff.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="364" column="45" selection-start-line="364" selection-start-column="45" selection-end-line="364" selection-end-column="45" />
+        <state relative-caret-position="7320">
+          <caret line="366" column="36" lean-forward="true" selection-start-line="366" selection-start-column="36" selection-end-line="366" selection-end-column="36" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

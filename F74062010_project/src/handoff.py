@@ -28,7 +28,7 @@ entry = [[0, 75, 0], [75, 0, 2], [75 * 2, 0, 2], [75 * 3, 0, 2], [75 * 4, 75, 1]
                            ], [75 * 3, 75 * 4, 3], [75 * 4, 75 * 3, 1]]  # in (x,y, direction)   # in unit
 width = 75 * 4  # in unit
 height = 75 * 4  # in unit
-pt = -50  # first meter power in dbm
+pt = -60  # first meter power in dbm
 arrival_prob = (2 / 60) * math.exp(-(2 / 60))
 threshold = -110  # dbm
 entro = 5  # dbm
@@ -50,12 +50,36 @@ class Car:
         if not self.active:
             return
 
-        if (self.x == 75 or self.x == 75 * 2 or self.x == 75 * 3) and (
-                self.y == 75 or self.y == 75 * 2 or self.y == 75 * 3):
+        if (self.x % 75 == 0) and (self.y % 75 == 0):
             self.turn()
         self.move()
 
     def turn(self):
+        if self.x == 0 and self.y == 0:
+            if self.direction == 3:
+                self.direction = 0
+            elif self.direction == 1:
+                self.direction = 2
+            return
+        elif self.x == 0 and self.y == 75*4:
+            if self.direction == 2:
+                self.direction = 0
+            elif self.direction == 1:
+                self.direction = 3
+            return
+        elif self.x == 75*4 and self.y == 0:
+            if self.direction == 0:
+                self.direction = 2
+            elif self.direction == 3:
+                self.direction = 1
+            return
+        elif self.x == 75*4 and self.y == 75*4:
+            if self.direction == 0:
+                self.direction = 3
+            elif self.direction == 2:
+                self.direction = 1
+            return
+
         r = random.random()
         if r < 0.5:  # no turn
             pass
@@ -298,6 +322,7 @@ def my_policy2(car):
 if __name__ == '__main__':
     setup()
     img = [[], [], [], [], []]
+
     m = [best_policy, threshold_policy, entropy_policy, my_policy, my_policy2]
     rec = []
     total = 0
@@ -328,11 +353,10 @@ if __name__ == '__main__':
             # new cars
             if j == 0:  # first loop to build rec list
                 rec.append(copy.deepcopy(generate(carlist)))
-
             else:  # after first loop use the same as first generating list
                 for k in range(0, 12):
                     if not rec[i][k] is None:
-                        carlist.append(copy.copy(rec[i][k]))
+                        carlist.append(copy.deepcopy(rec[i][k]))
                         total += 1
             # step log
             if i % 5000 == 0:
